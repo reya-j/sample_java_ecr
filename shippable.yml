@@ -19,7 +19,8 @@ build:
 integrations:
   hub:
     - integrationName: test_ecr
-      type: ecr   
+      type: ecr 
+      region: us-west-2
     #  branches:
      #   only:
       #    - master
