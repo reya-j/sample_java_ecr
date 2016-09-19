@@ -8,10 +8,10 @@ jdk:
 
 build:
   pre_ci:
-    - docker build -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
+    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test .
 
   pre_ci_boot:
-    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
+    image_name: 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -22,11 +22,11 @@ build:
 
   post_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
-    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
+    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test
     
 integrations:
   hub:
-    - integrationName: ship-ecr
+    - integrationName: test_ecr
       type: ecr  
     #  branches:
      #   only:
