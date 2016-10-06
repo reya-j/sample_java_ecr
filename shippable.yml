@@ -8,7 +8,7 @@ jdk:
 
 build:
   pre_ci:
-    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:latest .
+    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test .
 
   pre_ci_boot:
     image_name: 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test
@@ -22,7 +22,7 @@ build:
 
   post_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
-    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:latest
+    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test
     
 integrations:
   hub:
