@@ -28,6 +28,7 @@ integrations:
   hub:
     - integrationName: ship-ecr
       type: ecr  
+      region: us-west-2
     #  branches:
      #   only:
       #    - master
