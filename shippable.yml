@@ -26,7 +26,7 @@ build:
     
 integrations:
   hub:
-    - integrationName: ship-ecr
+    - integrationName: rc-ecr
       type: ecr  
       region: us-west-2
     #  branches:
