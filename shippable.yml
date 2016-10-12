@@ -18,7 +18,7 @@ build:
     
 integrations:
   hub:
-    - integrationName: test_ecr
+    - integrationName: rc-ecr
       type: ecr 
       region: us-west-2
     #  branches:
